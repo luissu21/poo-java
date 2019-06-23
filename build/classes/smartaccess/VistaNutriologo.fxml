@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartaccess.controlador.VistaNutriologoController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #5b9395;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnSalir" contentDisplay="GRAPHIC_ONLY" layoutX="518.0" layoutY="15.0" onAction="#Salir" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 25px;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="85.0" fitWidth="103.0" layoutX="26.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/smartaccessVB.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="26.0" prefHeight="51.0" prefWidth="210.0" text="Visualizar Información Nutriologo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="102.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <TableView fx:id="tablaNutriologo" prefHeight="300.0" prefWidth="600.0" style="-fx-border-color: #5b9395;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="colId" maxWidth="50.0" prefWidth="45.0" resizable="false" text="ID" />
+                  <TableColumn fx:id="colNom" maxWidth="200.0" prefWidth="140.0" text="Nombre" />
+                  <TableColumn fx:id="colTel" maxWidth="150.0" prefWidth="110.0" text="Telefono" />
+                  <TableColumn fx:id="colCorreo" maxWidth="500.0" prefWidth="150.0" text="Correo" />
+                  <TableColumn fx:id="colRFC" maxWidth="200.0" prefWidth="150.0" text="RFC" />
+                  <TableColumn fx:id="colEsp" maxWidth="100.0" text="Especialidad" />
+                  <TableColumn fx:id="colHE" maxWidth="100.0" text="Hora Entrada" />
+                  <TableColumn fx:id="colHS" maxWidth="100.0" text="Hora Salida" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartaccess.controlador.ModificarUsuariosController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #5b9395;">
+         <children>
+            <JFXButton fx:id="btnRegresar" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="22.0" onAction="#Regresar">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/previous.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnModificar" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="200.0" onAction="#modificarUsuario" prefHeight="40.0" prefWidth="223.0" text="Modificar" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="240.0" onAction="#eliminarUsuario" prefHeight="40.0" prefWidth="223.0" text="Eliminar" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/garbage-2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnpago" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="280.0" prefHeight="40.0" prefWidth="223.0" text="Actualizar pago" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/dollar-symbol+1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnact" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="320.0" onAction="#ConfActiSalas" prefHeight="40.0" prefWidth="223.0" text="Configurar Actividades" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/list-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSalir" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="360.0" onAction="#Salir" prefHeight="40.0" prefWidth="223.0" text="Salir" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/multiply.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="76.0" layoutY="478.0" prefHeight="100.0" prefWidth="100.0" text="Ver Usuarios" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/users+1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="250.0" prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="txtBUsu" focusColor="#5b9395" layoutX="34.0" layoutY="26.0" prefHeight="40.0" prefWidth="131.0" promptText="Buscar Usuarios por ID" />
+            <AnchorPane layoutY="93.0" prefHeight="111.0" prefWidth="550.0" style="-fx-background-color: #979797;">
+               <children>
+                  <JFXTextField fx:id="txtNom" focusColor="WHITE" layoutX="206.0" layoutY="20.0" prefHeight="40.0" prefWidth="302.0" promptText="Nombre" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtId" focusColor="WHITE" layoutX="206.0" layoutY="60.0" prefHeight="40.0" prefWidth="100.0" promptText="ID" unFocusColor="WHITE" />
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="ImaFoto" fitHeight="150.0" fitWidth="150.0" layoutX="34.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/user-4.png" />
+               </image>
+            </ImageView>
+            <JFXComboBox fx:id="cbTP" focusColor="#5b9395" layoutX="56.0" layoutY="302.0" prefHeight="37.0" prefWidth="163.0" promptText="Tipo de pago" />
+            <JFXTextField fx:id="txtAlergias" focusColor="#5b9395" layoutX="292.0" layoutY="360.0" prefHeight="37.0" prefWidth="211.0" promptText="Alergias" />
+            <JFXTextField fx:id="txtEnfermedad" focusColor="#5b9395" layoutX="55.0" layoutY="360.0" prefHeight="37.0" prefWidth="211.0" promptText="Enfermedades" />
+            <JFXTextField fx:id="txtAltura" focusColor="#5b9395" layoutX="400.0" layoutY="302.0" prefHeight="37.0" prefWidth="77.0" promptText="Altura" />
+            <JFXTextField fx:id="txtPeso" focusColor="#5b9395" layoutX="266.0" layoutY="302.0" prefHeight="37.0" prefWidth="77.0" promptText="Peso" />
+            <JFXTextField fx:id="txtTel" focusColor="#5b9395" layoutX="206.0" layoutY="222.0" prefHeight="37.0" prefWidth="138.0" promptText="Telefono" />
+            <JFXButton fx:id="btnHuella" layoutX="348.0" layoutY="529.0" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Actualizar Huella Dactilar" textFill="#5b9395" />
+            <DatePicker fx:id="dpFecha" layoutX="370.0" layoutY="222.0" prefHeight="37.0" prefWidth="138.0" promptText="DD/MM/AAAA" style="-fx-background-color: #FFF;" />
+            <JFXButton fx:id="btnBuscarN" layoutX="452.0" layoutY="467.0" onAction="#AsignarNutriologo" prefHeight="37.0" prefWidth="59.0" style="-fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: #fff; -fx-background-radius: 20px;" text="Ver" textFill="#5b9395">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnBuscarI" layoutX="452.0" layoutY="417.0" onAction="#AsignarInstructor" prefHeight="37.0" prefWidth="59.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Ver" textFill="#5b9395">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="cbNutri" focusColor="#5b9395" layoutX="55.0" layoutY="467.0" prefHeight="37.0" prefWidth="361.0" promptText="Nutriologo" />
+            <JFXComboBox fx:id="cbInst" focusColor="#5b9395" layoutX="55.0" layoutY="417.0" prefHeight="37.0" prefWidth="361.0" promptText="Instructor" />
+            <JFXButton fx:id="btnBuscarId" layoutX="190.0" layoutY="28.0" onAction="#BuscarUsu" prefHeight="37.0" prefWidth="70.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Buscar" textFill="#5b9395">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="343.0" layoutY="295.0" prefHeight="51.0" prefWidth="49.0" text="kg" textFill="#5b9395">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="477.0" layoutY="295.0" prefHeight="51.0" prefWidth="49.0" text="mts" textFill="#5b9395">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

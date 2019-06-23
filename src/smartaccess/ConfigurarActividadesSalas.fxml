@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartaccess.controlador.ConfigurarActividadesSalasController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #5b9395;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnRegresar" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="21.0" onAction="#Regresar">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/previous.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="76.0" layoutY="269.0" prefHeight="100.0" prefWidth="100.0" text="Configurar Act/Salas" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/list+1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="260.0" layoutY="10.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="32.0" layoutY="20.0" prefHeight="51.0" prefWidth="250.0" text="Configurar Actividades/Salas" textFill="#5b9395">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtBUsu" focusColor="#5b9395" layoutX="55.0" layoutY="87.0" prefHeight="40.0" prefWidth="81.0" promptText="ID del Usuario" />
+            <JFXButton fx:id="btnBuscarID" layoutX="154.0" layoutY="90.0" onAction="#BuscarUsu" prefHeight="37.0" prefWidth="81.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Buscar" textFill="#5b9395" />
+            <JFXTextField fx:id="txtNom" editable="false" focusColor="#5b9395" layoutX="55.0" layoutY="150.0" prefHeight="40.0" prefWidth="313.0" promptText="Nombre" />
+            <JFXComboBox fx:id="cbActi" focusColor="#5b9395" layoutX="32.0" layoutY="220.0" prefHeight="37.0" prefWidth="179.0" promptText="Seleccionar Actividades" />
+            <JFXButton fx:id="btnActualizar" layoutX="57.0" layoutY="306.0" onAction="#guardarActividad" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Actualizar" textFill="#5b9395" />
+            <JFXButton fx:id="btnSalir" contentDisplay="GRAPHIC_ONLY" layoutX="371.0" layoutY="10.0" onAction="#Salir" prefHeight="72.0" prefWidth="68.0">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="cbSal" focusColor="#5b9395" layoutX="245.0" layoutY="220.0" prefHeight="37.0" prefWidth="179.0" promptText="Seleccionar Salas" />
+            <JFXButton fx:id="btnActualizar1" layoutX="270.0" layoutY="306.0" onAction="#guardarSalas" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Actualizar" textFill="#5b9395" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

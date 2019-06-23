@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="smartaccess.jnlp">
+  <information>
+    <title>smartaccess</title>
+    <vendor>Elyziita</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2414497" download="eager" />
+    <jar href="lib\sqljdbc4.jar" size="584207" download="eager" />
+    <jar href="smartaccess.jar" size="2234487" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="smartaccess" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="smartaccess.smartaceess"  name="smartaccess" />
+  <update check="always"/>
+</jnlp>

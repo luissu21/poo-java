@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="900.0" style="-fx-background-color: #fff; -fx-border-radius: 5em;" stylesheets="@../smartaccess/resources/MyStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartaccess.controlador.LoginController">
+   <children>
+      <AnchorPane layoutY="23.0" style="-fx-background-color: #fff; -fx-border-radius: 5em;">
+         <children>
+            <AnchorPane layoutX="567.0" layoutY="-2.0" prefHeight="450.0" prefWidth="333.0" style="-fx-background-color: #fff; -fx-border-radius: 5em;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="567.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+               <children>
+                  <JFXTextField fx:id="usu" focusColor="#5b9395" layoutX="47.0" layoutY="157.0" prefHeight="40.0" prefWidth="257.0" promptText="Usuario" unFocusColor="#b5b5b5" />
+                  <JFXPasswordField fx:id="passw" focusColor="#5b9395" layoutX="47.0" layoutY="225.0" prefHeight="40.0" prefWidth="257.0" promptText="Contraseña" unFocusColor="#b5b5b5" />
+                  <JFXButton fx:id="btnInicioAction" layoutX="47.0" layoutY="296.0" onAction="#btnInicioAction" prefHeight="36.0" prefWidth="257.0" style="-fx-background-color: #fff; -fx-border-color: #5b9395; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" text="Entrar" textFill="#5b9395" />
+                  <Label layoutX="109.0" layoutY="83.0" text="Iniciar Sesión" textFill="#5b9395">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nodata" layoutX="47.0" layoutY="352.0" prefHeight="30.0" prefWidth="257.0" textFill="#cd2d2d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="95.0" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #b5b5b5;" text="Iniciar Sesión" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/login.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnExit" alignment="BASELINE_LEFT" layoutY="176.0" onAction="#btnSalir" prefHeight="40.0" prefWidth="150.0" text="Salir">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/multiplyB.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="136.0" prefHeight="40.0" prefWidth="150.0" text="Ayuda">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/icon/info.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="167.0" layoutY="-2.0" prefHeight="500.0" prefWidth="417.0" style="-fx-background-color: #5b9395;" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="333.0">
+         <children>
+            <Label layoutX="68.0" layoutY="268.0" text="Bienvenido a smartaccess" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="216.0" fitWidth="206.0" layoutX="106.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/smartaccessVB.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="106.0" layoutY="304.0" text="MARA-SPORT LORETO FABELA" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
